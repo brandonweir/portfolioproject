@@ -1,0 +1,82 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* h1, h2, h3 {
+    font-family: "Lobster", cursive;
+} */
+
+h2 {
+    color: #3046C5;
+}
+
+header {
+    padding: 30px;
+    background-image: linear-gradient(to right, #0b7e86, #057559, #106b3e);
+
+    color: white;
+}
+
+header h2 {
+    color: white;
+}
+
+footer {
+    background-image: linear-gradient(white,#0b7e86);
+    padding: 20px 0;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: #035291;
+}
+
+/* .card-header {
+    background-color: teal;
+    color: white;
+} */
+
+/* .tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+} */
+
+.accordion-button {
+    background-color: #d3d3d3;
+  }
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel {
+    border: solid #5637DD;
+}
+
+.container {
+    margin-left: 0!important;
+    margin-right: 0!important;
+  }
+
+html {
+    margin: 5em;
+}
+/* body {
+    margin-right: 5em;
+    font-family: Verdana, Arial, sans-serif;
+} */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
