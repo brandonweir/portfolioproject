@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel --open",
     "build": "parcel build"
- },
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
