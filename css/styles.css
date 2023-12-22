@@ -1,45 +1,103 @@
-body {
-    font-family: "Open Sans", sans-serif;
+/* Define color variables based on the logo in CSS syntax */
+:root {
+    --primary-color: #004f7c; /* Example dark blue color */
+    --secondary-color: white; /* Example light blue color */
+    --accent-color: #ffc72c; /* Example yellow color */
 }
 
-/* h1, h2, h3 {
-    font-family: "Lobster", cursive;
-} */
-
-h2 {
-    color: #3046C5;
+/* Override color variables for dark theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #004f7c;
+        --secondary-color: rgb(0, 0, 0);
+        --accent-color: #ffc72c;
+    }
 }
-
-header {
+  
+  header {
     padding: 30px;
-    background-image: linear-gradient(to right, #0b7e86, #057559, #106b3e);
-
+    background-image: linear-gradient(to bottom, #31444b, #004f7c);
     color: white;
-}
-
-header h2 {
+  }
+  
+  footer {
+    padding: 30px;
+    background-image: linear-gradient(to top, #31444b, #004f7c);
     color: white;
-}
+  }
+  
+  /* General body styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
+main {
+    padding: 30px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
 
-footer {
-    background-image: linear-gradient(white,#0b7e86);
-    padding: 20px 0;
-}
-
-.row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
-}
-
-.navbar {
-    background-color: #035291;
-}
-
-/* .card-header {
-    background-color: teal;
+  /* Navbar styling */
+  .navbar {
+    background-color: var(--secondary-color);
+  }
+  
+  .navbar .navbar-brand img {
+    display: inline-block;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: var(--accent-color);
+  }
+  
+  .navbar .nav-link {
+    color: var(--primary-color);
+  }
+  
+  .navbar .nav-link:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Additional styles can be added here */
+  
+  .card-header {
+    background-color: #31444b;
     color: white;
-} */
+  }
+  
+  .card-body {
+    background-color: #3984bb;
+    color: white;
+  }
+  
+  #menuCarousel {
+    padding: 10px;
+  }
+  
+  .card {
+    border-color: #ffc72c;
+    border-width: 2px;
+  }
+  
+  .modal-header {
+    background-color: #31444b;
+    color: white;
+  }
+  
+  .form-label {
+    color: black;
+  }
+  
+  .text-muted {
+    color: black;
+  }
+  
+  #removeButton {
+    background-color: #31444b;
+    color: white;
+  }
 
 /* .tab-content {
     border: 1px solid #DDD;
@@ -47,25 +105,25 @@ footer {
     padding: 10px;
 } */
 
-.accordion-button {
+/* .accordion-button {
     background-color: #d3d3d3;
-  }
+  } */
 
-.carousel-caption {
+/* .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
-}
-.carousel {
+} */
+/* .carousel {
     border: solid #5637DD;
-}
+} */
 
-.container {
+/* .container {
     margin-left: 0!important;
     margin-right: 0!important;
-  }
+  } */
 
-html {
+/* html {
     margin: 5em;
-}
+} */
 /* body {
     margin-right: 5em;
     font-family: Verdana, Arial, sans-serif;
@@ -74,9 +132,17 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
+@media (prefers-color-scheme: dark) {
+    table, th, td {
+        border: 1px solid #004f7c;
+    }
+}
+  
 th, td {
   padding: 5px;
 }
+
 th {
   text-align: left;
 }
