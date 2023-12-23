@@ -1,10 +1,12 @@
 // experience.js
+import experienceCsv from '../csv/experience.csv';
+
 (async function() {
     // Select the container where the table will be inserted
     const container = document.querySelector('#experience-table');
 
     // Fetch the CSV file
-    const response = await fetch('csv/experience.csv');
+    const response = await fetch(experienceCsv);
     const data = await response.text();
 
     // Parse the CSV data

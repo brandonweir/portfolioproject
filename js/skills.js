@@ -1,4 +1,6 @@
-fetch('csv/skills.csv')
+import skillsCsv from '../csv/skills.csv';
+
+fetch(skillsCsv)
     .then(response => response.text())
     .then(data => {
         const results = Papa.parse(data, {header: true});

@@ -1,10 +1,12 @@
 // education.js
+import educationCsv from '../csv/education.csv';
+
 (async function() {
     // Select the container where the table will be inserted
     const container = document.querySelector('#education-table');
 
     // Fetch the CSV file
-    const response = await fetch('csv/education.csv');
+    const response = await fetch(educationCsv);
     const data = await response.text();
 
     // Parse the CSV data

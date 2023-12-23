@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "parcel": "^2.10.3"
   },
   "dependencies": {

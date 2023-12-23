@@ -1,10 +1,12 @@
 // licNcert.js
+import licNcertCsv from '../csv/licNcert.csv';
+
 (async function() {
     // Select the container where the table will be inserted
     const container = document.querySelector('#licNcert-table');
 
     // Fetch the CSV file
-    const response = await fetch('csv/licNcert.csv');
+    const response = await fetch(licNcertCsv);
     const data = await response.text();
 
     // Parse the CSV data
