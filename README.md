@@ -11,7 +11,7 @@ You are free to use my code as an example but please give me credit!
 ## Screenshots
 
 ### Light Mode
-![Light Mode](image.png)
+![Light Mode](images/Week4-portfolio-project-light-BrandonWeir.png)
 
 ### Dark Mode
-![Dark Mode](image-1.png)
+![Dark Mode](images/Week4-portfolio-project-dark-BrandonWeir.png)
