@@ -1,5 +1,5 @@
 // Import the JSON data
-import educationData from './data/education.json';
+import educationData from '../data/education.json';
 
 (function() {
     // Select the container where the table will be inserted
@@ -7,13 +7,23 @@ import educationData from './data/education.json';
 
     // Create a table from the JSON data
     const table = document.createElement('table');
-    educationData.forEach((item, index) => {
+
+    // Create the header row
+    const headerRow = document.createElement('tr');
+    Object.keys(educationData[0]).forEach(key => {
+        const th = document.createElement('th');
+        th.textContent = key;
+        headerRow.appendChild(th);
+    });
+    table.appendChild(headerRow);
+
+    // Create the rest of the rows
+    educationData.forEach((item) => {
         const tr = document.createElement('tr');
         Object.values(item).forEach(value => {
-            // Create th elements for the header row, td elements for the rest
-            const cell = document.createElement(index === 0 ? 'th' : 'td');
-            cell.textContent = value;
-            tr.appendChild(cell);
+            const td = document.createElement('td');
+            td.textContent = value;
+            tr.appendChild(td);
         });
         table.appendChild(tr);
     });

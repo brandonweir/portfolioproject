@@ -1,5 +1,5 @@
 // Import the JSON data
-import licNcertData from './data/licNcert.json';
+import licNcertData from '../data/licNcert.json';
 
 (function() {
     // Select the container where the table will be inserted
@@ -7,13 +7,23 @@ import licNcertData from './data/licNcert.json';
 
     // Create a table from the JSON data
     const table = document.createElement('table');
-    licNcertData.forEach((item, index) => {
+
+    // Create the header row
+    const headerRow = document.createElement('tr');
+    Object.keys(licNcertData[0]).forEach(key => {
+        const th = document.createElement('th');
+        th.textContent = key;
+        headerRow.appendChild(th);
+    });
+    table.appendChild(headerRow);
+
+    // Create the rest of the rows
+    licNcertData.forEach((item) => {
         const tr = document.createElement('tr');
         Object.values(item).forEach(value => {
-            // Create th elements for the header row, td elements for the rest
-            const cell = document.createElement(index === 0 ? 'th' : 'td');
-            cell.textContent = value;
-            tr.appendChild(cell);
+            const td = document.createElement('td');
+            td.textContent = value;
+            tr.appendChild(td);
         });
         table.appendChild(tr);
     });
