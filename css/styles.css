@@ -14,120 +14,93 @@
     }
 }
   
-  header {
-    padding: 30px;
-    background-image: linear-gradient(to bottom, #31444b, #004f7c);
-    color: white;
-  }
+header {
+  padding: 30px;
+  background-image: linear-gradient(to bottom, #31444b, #004f7c);
+  color: white;
+}
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding-bottom: var(--header-height);
   
-  footer {
-    padding: 30px;
-    background-image: linear-gradient(to top, #31444b, #004f7c);
-    color: white;
-  }
-  
-  /* General body styling */
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
+}
+
+header, nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* This ensures the header and nav are always on top of other elements */
+}
   
 main {
     padding: 30px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-  }
+}
 
-  /* Navbar styling */
-  .navbar {
-    background-color: var(--secondary-color);
-  }
-  
-  .navbar .navbar-brand img {
-    display: inline-block;
-  }
-  
-  .navbar .navbar-brand:hover {
-    color: var(--accent-color);
-  }
-  
-  .navbar .nav-link {
-    color: var(--primary-color);
-  }
-  
-  .navbar .nav-link:hover {
-    color: var(--accent-color);
-  }
-  
-  /* Additional styles can be added here */
-  
-  .card-header {
-    background-color: #31444b;
-    color: white;
-  }
-  
-  .card-body {
-    background-color: #3984bb;
-    color: white;
-  }
-  
-  #menuCarousel {
-    padding: 10px;
-  }
-  
-  .card {
-    border-color: #ffc72c;
-    border-width: 2px;
-  }
-  
-  .modal-header {
-    background-color: #31444b;
-    color: white;
-  }
-  
-  .form-label {
-    color: black;
-  }
-  
-  .text-muted {
-    color: black;
-  }
-  
-  #removeButton {
-    background-color: #31444b;
-    color: white;
-  }
+/* Navbar styling */
+.navbar {
+  background-color: var(--secondary-color);
+}
 
-/* .tab-content {
-    border: 1px solid #DDD;
-    border-top: none;
-    padding: 10px;
-} */
+.navbar .navbar-brand img {
+  display: inline-block;
+}
 
-/* .accordion-button {
-    background-color: #d3d3d3;
-  } */
+.navbar .navbar-brand:hover {
+  color: var(--accent-color);
+}
 
-/* .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-} */
-/* .carousel {
-    border: solid #5637DD;
-} */
+.navbar .nav-link {
+  color: var(--primary-color);
+}
 
-/* .container {
-    margin-left: 0!important;
-    margin-right: 0!important;
-  } */
+.navbar .nav-link:hover {
+  color: var(--accent-color);
+}
 
-/* html {
-    margin: 5em;
-} */
-/* body {
-    margin-right: 5em;
-    font-family: Verdana, Arial, sans-serif;
-} */
+/* Additional styles can be added here */
+
+.card-header {
+  background-color: #31444b;
+  color: white;
+}
+
+.card-body {
+  background-color: #3984bb;
+  color: white;
+}
+
+#menuCarousel {
+  padding: 10px;
+}
+
+.card {
+  border-color: #ffc72c;
+  border-width: 2px;
+}
+
+.modal-header {
+  background-color: #31444b;
+  color: white;
+}
+
+.form-label {
+  color: black;
+}
+
+.text-muted {
+  color: black;
+}
+
+#removeButton {
+  background-color: #31444b;
+  color: white;
+}
+
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -145,4 +118,29 @@ th, td {
 
 th {
   text-align: left;
+}
+
+section::before {
+  content: "";
+  display: block;
+  height: var(--header-height);
+  margin-top: calc(-1 * var(--header-height));
+  visibility: hidden;
+}
+
+#project-list {
+  padding-left: 20px;
+}
+
+#skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-indent: 10px;
+}
+
+footer {
+  padding: 30px;
+  background-image: linear-gradient(to top, #31444b, #004f7c);
+  color: white;
 }

@@ -18,6 +18,8 @@
     <!-- <link rel="stylesheet" href="css/styles.scss" /> -->
     <link rel="stylesheet" href="css/styles.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
     <title>Portfolio Project - Brandon Weir</title>
 </head>
 
@@ -36,27 +38,26 @@
                 </div>
             </div>
         </div>
-    </header>
-
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Professional Portfolio Project</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-solid fa-house fa-lg"></i> Home/About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects"><i class="fa-solid fa-list fa-lg"></i> Development Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience"><i class="fa-solid fa-list fa-lg"></i> Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education"><i class="fa-solid fa-list fa-lg"></i> Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#licNcert"><i class="fa-solid fa-list fa-lg"></i> Licenses & Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills"><i class="fa-solid fa-list fa-lg"></i> Technical Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mailto:bw@rmts2.com"><i class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
-                </ul>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Professional Portfolio Project</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-solid fa-house fa-lg"></i> Home/About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects"><i class="fa-solid fa-list fa-lg"></i> Development Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience"><i class="fa-solid fa-list fa-lg"></i> Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education"><i class="fa-solid fa-list fa-lg"></i> Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#licNcert"><i class="fa-solid fa-list fa-lg"></i> Licenses & Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills"><i class="fa-solid fa-list fa-lg"></i> Technical Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:bw@rmts2.com"><i class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main>
         <hr>
@@ -89,7 +90,7 @@
         <!-- developer projects -->
         <section id="projects">
             <h2 class="container">Developer Projects</h2>
-            <div class="row">
+            <div class="row" id="project-list">
                 <ul class="col">
                     <li>Add Something</li>
                     <li>Add Something</li>
@@ -112,234 +113,40 @@
         <!-- experience -->
         <section id="experience">
             <h2 class="container">Experience</h2>
-            <table>
-                <tr>
-                    <th>Company</th>
-                    <th>Title</th>
-                    <th>Location</th>
-                    <th>Start</th>
-                    <th>End</th>
-                </tr>
-                <tr>
-                    <td>Managed Business Services</td>
-                    <td>Technical Project Manager Agile</td>
-                    <td>Denver Metro Area, CO</td>
-                    <td>Aug 2023</td>
-                    <td>current</td>
-                </tr>
-                <tr>
-                    <td>IHS Markit</td>
-                    <td>Director, Software Engineering/Operations</td>
-                    <td>Denver Metro Area, CO</td>
-                    <td>Apr 2020</td>
-                    <td>May 2022</td>
-                </tr>
-                <tr>
-                    <td>IHS Markit</td>
-                    <td>Agile Coach / Associate Director of ScrumMasters</td>
-                    <td>Denver Metro Area, CO</td>
-                    <td>Jul 2019</td>
-                    <td>Apr 2020</td>
-                </tr>
-                <tr>
-                    <td>IHS Markit</td>
-                    <td>Associate Director / Principal Technical Project Manager</td>
-                    <td>Denver Metro Area, CO</td>
-                    <td>Mar 2016</td>
-                    <td>Jul 2019</td>
-                </tr>
-                <tr>
-                    <td>IHS Markit</td>
-                    <td>Senior IT Service Delivery Manager</td>
-                    <td>Denver Metro Area, CO</td>
-                    <td>Nov 2015</td>
-                    <td>Mar 2016</td>
-                </tr>
-                <tr>
-                    <td>IHS Markit</td>
-                    <td>Senior IT Project/Program & Service Manager (contract)</td>
-                    <td>Denver Metro Area, CO</td>
-                    <td>Oct 2014</td>
-                    <td>Nov 2015</td>
-                </tr>
-                <tr>
-                    <td>IGT</td>
-                    <td>Client Manager</td>
-                    <td>Golden, CO</td>
-                    <td>Nov 2010</td>
-                    <td>Apr 2014</td>
-                </tr>
-                <tr>
-                    <td>IGT</td>
-                    <td>Field Supervisor/Project Manager</td>
-                    <td>Golden, CO</td>
-                    <td>Mar 2009</td>
-                    <td>Nov 2010</td>
-                </tr>
-                <tr>
-                    <td>IGT</td>
-                    <td>Project Manager</td>
-                    <td>Golden, CO</td>
-                    <td>Sep 2007</td>
-                    <td>Mar 2009</td>
-                </tr>
-                <tr>
-                    <td>IGT</td>
-                    <td>Systems Engineeer</td>
-                    <td>Golden, CO</td>
-                    <td>Apr 2006</td>
-                    <td>Sep 2007</td>
-                </tr>
-                <tr>
-                    <td>IGT</td>
-                    <td>Systems Analyst</td>
-                    <td>Gulfport, MS / Las Vegas, NV</td>
-                    <td>May 2005</td>
-                    <td>Apr 2006</td>
-                </tr>
-                <tr>
-                    <td>Grand Casino Gulfport</td>
-                    <td>Systems Technician</td>
-                    <td>Gulfport, MS</td>
-                    <td>Nov 2003</td>
-                    <td>May 2005</td>
-                </tr>
-            </table>
+            <div id="experience-table"></div>
         </section>
+
+        <script src="js/experience.js"></script>
+        
         <hr>
 
         <!-- education -->
         <section id="education">
             <h2 class="container">Education</h2>
-            <table>
-                <tr>
-                    <th>University</th>
-                    <th>Degree</th>
-                    <th>Major / Minor</th>
-                    <th>GPA</th>
-                    <th>Conferred</th>
-                </tr>
-                <tr>
-                    <td>University of Phoenix</td>
-                    <td>Bachelors of Science</td>
-                    <td>Business / Information Systems</td>
-                    <td>3.71</td>
-                    <td>Nov 2011</td>
-                </tr>
-                <tr>
-                    <td>University of Phoenix</td>
-                    <td>Associate of Arts</td>
-                    <td>Information Technology</td>
-                    <td>3.86</td>
-                    <td>Oct 2007</td>
-                </tr>
-            </table>
+            <div id="education-table"></div>
         </section>
+
+        <script src="js/education.js"></script>
+
         <hr>
 
         <!-- licenses and certifications -->
         <section id="licNcert">
             <h2 class="container">Licenses and Certifications</h2>
-            <table>
-                <tr>
-                    <th>Organization</th>
-                    <th>License/Certificate</th>
-                    <th>Issued</th>
-                    <th>Expires</th>
-                    <th>Credential ID</th>
-                </tr>
-                <tr>
-                    <td>Vanderbilt University</td>
-                    <td>Prompt Engineering for ChatGPT</td>
-                    <td>Dec 2023</td>
-                    <td>N/A</td>
-                    <td>MMNDHRWE4QJS</td>
-                </tr>
-                <tr>
-                    <td>Project Management Institute</td>
-                    <td>Project Management Professional (PMP)</td>
-                    <td>Jun 2023</td>
-                    <td>Jun 2026</td>
-                    <td>3542530</td>
-                </tr>
-                <tr>
-                    <td>Project Management Institute</td>
-                    <td>Project Management Professional (PMP)</td>
-                    <td>Aug 2011</td>
-                    <td>Aug 2020</td>
-                    <td>1443410</td>
-                </tr>
-                <tr>
-                    <td>Scaled Agile, Inc.</td>
-                    <td>Certified SAFe 5 Program Consultant (SPC)</td>
-                    <td>Jun 2022</td>
-                    <td>Jun 2024</td>
-                    <td>82674026-41110</td>
-                </tr>
-                <tr>
-                    <td>Scrum Alliance</td>
-                    <td>Certified ScrumMaster (CSM)</td>
-                    <td>Aug 2014</td>
-                    <td>Dec 2024</td>
-                    <td>00034116</td>
-                </tr>
-                <tr>
-                    <td>Scrum Alliance</td>
-                    <td>Certified Scrum Product Owner (CSPO)</td>
-                    <td>Sep 2016</td>
-                    <td>Dec 2024</td>
-                    <td>00034116</td>
-                </tr>
-                <tr>
-                    <td>AXELOS</td>
-                    <td>ITIL Foundation v3</td>
-                    <td>Apr 2016</td>
-                    <td>N/A</td>
-                    <td>GR750232046BW</td>
-                </tr>
-                <tr>
-                    <td>CompTIA</td>
-                    <td>Linux+</td>
-                    <td>Jun 2004</td>
-                    <td>N/A</td>
-                    <td>COMP001000936268</td>
-                </tr>
-                <tr>
-                    <td>CompTIA</td>
-                    <td>Network+</td>
-                    <td>Mar 2003</td>
-                    <td>N/A</td>
-                    <td>COMP001000936268</td>
-                </tr>
-                <tr>
-                    <td>CompTIA</td>
-                    <td>A+</td>
-                    <td>Feb 2003</td>
-                    <td>N/A</td>
-                    <td>COMP001000936268</td>
-                </tr>
-            </table>
+            <div id="licNcert-table"></div>
         </section>
+
+        <script src="js/licNcert.js"></script>
+
         <hr>
 
         <!-- skills -->
         <section id="skills">
-            <h2 class="container">Tech Skills</h2>
-            <div class="row">
-                <ul class="col">
-                    <li>Prompt Engineering</li>
-                    <li>Web Development</li>
-                </ul>
-                <ul class="col">
-                    <li>Project Management</li>
-                    <li>Agile</li>
-                </ul>
-                <ul class="col">
-                    <li>Lean</li>
-                    <li>Scrum</li>
-                </ul>
-            </div>
+            <h2 class="container">Technical Skills</h2>
+            <div id="skills-list"></div>
         </section>
+
+        <script src="js/skills.js"></script>
 
     </main>
 
@@ -361,8 +168,8 @@
                 </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
-                    <a href="https://www.linkedin.com/in/brandon-weir-15b7053/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                    <a href="https://github.com/brandonweir"><i class="fa-brands fa-github fa-xl"></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brandon-weir-15b7053/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/brandonweir"><i class="fa-brands fa-github fa-xl"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
                     <i class="fa-solid fa-envelope fa-lg text-primary"></i> Email: bw@rmts2.com
@@ -374,6 +181,7 @@
     <!-- Bootstrap 5.3.2 JS Bundle (Popper.js included) -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <!-- Additional JS must be placed after Bootstrap JS -->
+    <script src="js/adjustHeader.js"></script>
     
 </body>
 </html>
