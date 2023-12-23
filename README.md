@@ -7,3 +7,8 @@ This is my first attempt at building my own professional portfolio. This is to h
 ### License
 
 You are free to use my code as an example but please give me credit!
+
+#### Screenshots
+
+![Light Mode](image.png)
+![Dark Mode](image-1.png)
